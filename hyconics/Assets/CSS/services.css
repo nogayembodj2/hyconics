@@ -1,0 +1,72 @@
+
+.services-page {
+    max-width: 1200px;
+    height: 200vh;
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .service {
+    position: relative;
+    flex: 0 0 calc(33.33% - 20px);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .service:hover {
+    transform: scale(1.05);
+  }
+  
+  .service-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    padding: 45px;
+    border-radius: 0 0 5px 5px;
+  }
+  
+  .service-details i {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #cb011b;
+  }
+  
+  .service-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .service-details p {
+    font-size: 16px;
+    line-height: 1.6;
+    animation: fadeInUp 1s 0.4s both;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

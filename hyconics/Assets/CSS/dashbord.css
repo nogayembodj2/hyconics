@@ -1,0 +1,31 @@
+/* ... autres styles ... */
+
+.dashboard-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.dashboard-title {
+    color: #cb011b;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.dashboard-container {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.dashboard-container p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.dashboard-action{
+    border-left: 1px solid black;
+    margin-left: 2em;
+    padding-left: 2em;
+}
+/* ... autres styles ... */

@@ -1,0 +1,163 @@
+/* Styles généraux de la page */
+
+.product-page {
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.product-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+#main-image {
+  width: 500px;
+}
+
+.product-images {
+  height: 400px;
+}
+
+.product-images img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.thumbnails {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+}
+
+.thumbnails img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: transform 0.3s;
+}
+
+.thumbnails img:last-child {
+  margin-right: 0;
+}
+
+.thumbnails img:hover {
+  transform: scale(1.2);
+}
+
+.options label,
+.options select,
+.options input {
+  display: block;
+  margin: 10px;
+  font-size: larger;
+  border-radius: 5px;
+}
+
+.add-to-cart {
+  padding: 10px 20px;
+  background-color: #cb011b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Styles pour la section product-details */
+.product-details {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.product-details-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-name {
+  color: #cb011b;
+  font-size: 24px;
+  margin-right: 280px;
+}
+
+.product-price {
+  font-size: 18px;
+}
+
+.product-details-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.product-image {
+  border-radius: 5px;
+  width: 300px;
+  height: 550px;
+  object-fit: cover;
+}
+
+.prix-desc {
+  flex: 1;
+  padding: 0 20px;
+}
+.prix-desc h2{
+  font-size: 2em;
+  margin-bottom: 30px;
+  margin-top: -40px;
+}
+
+.product-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.product-form {
+  margin-top: 10px;
+}
+
+.options label,
+.options select {
+  display: block;
+  margin-bottom: 5px;
+  margin: 30px 10px;
+}
+
+.options select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  font-size: 16px;
+}
+
+.btn-buy {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #cb011b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.btn-buy:hover {
+  background-color: #ad0015;
+}
+

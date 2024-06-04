@@ -1,0 +1,228 @@
+@import url("colors.css");
+
+                /* Body */
+
+                /* Slider */
+
+.slider-container {
+    max-width: 90vw;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--bleu-clair);
+    height: 500px;
+    position: relative;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+  
+  .slide-text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #ffffff;
+    background-color: var(--bleu-fonce);
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .slide-text h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  .slide-text p {
+    font-size: 16px;
+  }
+  
+  .slide-text a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--rouge);
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  .slide-text a:hover {
+    background-color: #232323;
+  }
+                /* Slider */
+
+
+                /* Services */
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    height: 500px;
+    margin: 50px auto;
+  }
+  
+  .service {
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    color: #3d5465;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px var(--gris-clair);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Pour positionner l'icône */
+  }
+  
+  .service-icon {
+
+    padding: 20px; /* Augmentation de la taille de l'icône */
+    border-radius: 50%;
+    position: absolute; /* Pour chevaucher le div */
+    top: -30px; /* Pour ajuster la position verticale */
+    left: 50%; /* Pour centrer horizontalement */
+    transform: translateX(-50%); /* Pour centrer horizontalement */
+
+  }
+  
+  .service-icon i {
+    scale: 3;
+    object-fit: cover;
+  }
+  
+  .service-content {
+    flex: 1;
+  }
+  
+  .service h2 {
+    margin: 10px 0;
+  }
+  
+  
+  .btn-custom {
+    display: inline-block;
+    padding: 8px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #cb011b;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-custom:hover {
+    background-color: #ad0418;
+  }
+  
+  
+                /* Services */
+
+                /* Section produits en vedette */
+  
+  .featured-products h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #cb011b;
+  }
+  
+  .product {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Ajustez la largeur selon vos besoins */
+    height: 70%; /* Ajustez la longueur selon vos besoins */
+    margin: 0 auto; /* Pour centrer horizontalement */
+  }
+  
+  .product .product-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .product .product-image:hover img {
+    transform: scale(1.1);
+  }
+  
+  .product .product-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    color: #ffffff;
+    border-radius: 10px;
+    transition: opacity 0.3s;
+  }
+  
+  .product:hover .product-overlay {
+    opacity: 1;
+  }
+  
+  .product h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .product p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .product a {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+
+ /* Ajouter des décorations pour combler les espaces vides */
+.featured-products {
+  padding: 50px 0;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative; /* Position relative pour le container */
+  background-image: url("..\Assets\images\tamanna-rumee-mIqyYpSNq3o-unsplash.jpg");
+  background-size: contain;
+}
+
+
+                /* Section produits en vedette */
+                /* Body */
